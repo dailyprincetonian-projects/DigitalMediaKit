@@ -200,4 +200,84 @@
     font-size: 48px;
     width: 34%;
     justify-content: center;
+    text-transform: uppercase;
+}
+
+/**************************************************************
+ *  RATES
+ *************************************************************/
+.rates {
+    flex-flow: column nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F5F5F5;
+}
+
+.rates--select {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    max-width: 500px;
+}
+
+.rates--select select {
+    background-color: #E1712F;
+    border: 0px;
+    color: #FFF;
+    border-radius: 5px;
+    padding: 0.125rem;
+    margin-left: 0.5rem;
+}
+
+.rates--select--option {
+    background-color: #FFF;
+}
+
+.rates--container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rates--rate {
+    display: flex;
+    flex-direction: column;
+}
+
+.rates--card {
+    min-width: 200px;
+    max-width: 350px;
+    border-radius: 10px;
+    flex-grow: 1;
+    box-shadow: 0px 2.5px 5px 2.5px lightgrey;
+    background-color: #FFF;
+    border-color: steelblue;
+    padding: 25px;
+    margin: 17.5px;
+}
+
+.rates--type {
+    color: #E1712F;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    align-self: center;
+}
+
+.rates--subtype--container {
+    display: flex;
+    margin-top: 0.25rem;
+}
+
+.rates--subtype {
+    display: inline;
+    font-size: 1.25em;
+    text-transform: capitalize;
+    margin-right: 1em;
+}
+
+.rates--cost {
+    font-size: 1.5em;
+    text-transform: capitalize;
+    color: #E1712F;
+    margin-left: auto;
 }
