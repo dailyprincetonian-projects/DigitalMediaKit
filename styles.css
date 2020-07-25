@@ -10,18 +10,25 @@
     margin: 0;
 }
 
+a {
+    color: #E1712F;
+    text-decoration: none;
+}
 
 /**************************************************************
  *  ADVERTISING
  *************************************************************/
 
 .advertising {
-    background: linear-gradient(rgba(31, 31, 31, 0.95), rgba(31, 31, 31, 0.95)), url(newspaper.jpg);
+    background: linear-gradient(rgba(31, 31, 31, 0.9), rgba(31, 31, 31, 1)), url(newspaper.jpg);
     background-color: #1F1F1F;
     height: 100vh;
     display: flex;
+    flex-flow: column nowrap;
     justify-content: center;
-    align-content: center;
+    align-content: flex-start;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 .advertising--banner {
@@ -29,6 +36,7 @@
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
+    margin-bottom: 200px;
 }
 
 .advertising--icon {
@@ -63,6 +71,22 @@
     line-height: 1.5;
 }
 
+.advertising--breaking {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.advertising--news {
+    color: #FFF;
+    font-weight: 100;
+    font-size: 36px; 
+    font-style: italic;
+}
+
+.advertising--headline {
+    color: #FFF;
+    font-size: 36px;    
+}
 
 /**************************************************************
  *  PRINCE
@@ -177,6 +201,7 @@
     padding: 25px;
     display: flex;
     flex-flow: column nowrap;
+    align-items: center;
 }
 
 .meet--header {
@@ -200,4 +225,118 @@
     font-size: 48px;
     width: 34%;
     justify-content: center;
+}
+
+.meet--intro {
+    width: 70%;
+    border-radius: 20px;
+    border: 2px solid #E1712F;
+    padding: 30px;
+    text-align: center;
+}
+
+.meet--charts {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.meet--chart {
+    display: flex;
+    margin: 50px;
+    border-radius: 20px;
+    border: 2px solid #E1712F;
+    overflow: hidden;
+}
+
+.meet--chart img {
+    
+    height: 300px;
+}
+
+.meet--cards {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.meet--card {
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    width: 275px;
+    height: 150px;
+    border-radius: 20px;
+    border: 2px solid #E1712F;
+}
+
+.meet--card-1 {
+    text-align: left;
+}
+
+.meet--card--stat {
+    color: #E1712F;
+    font-size: 48px;
+}
+
+.meet--card--stat--sm {
+    color: #E1712F;
+    font-size: 24px;
+}
+
+.meet--card--asterisk {
+    font-size: 10px;
+}
+
+.meet--card--img {
+    height: 40px;
+    width: auto;
+    margin-right: 5px;
+}
+
+
+/**************************************************************
+ *  WHY?
+ *************************************************************/
+
+.why {
+    background-color: #E1712F;
+    padding: 25px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center
+}
+
+.why--header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.why--line {
+    display: flex;
+    font-size: 24px;
+    border-bottom: 2px solid #FFF;
+    width: 33%;
+}
+
+.why--title {
+    display: flex;
+    font-size: 48px;
+    width: 34%;
+    justify-content: center;
+    color: #FFF;
+}
+
+.why--text {
+    display: flex;
+    width: 80%;
+    text-align: center;
+    color: #FFF;
 }
