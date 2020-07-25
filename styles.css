@@ -1,0 +1,75 @@
+/* COLORS */
+/* LIGHT GRAY: #F5F5F5 */
+/* ORANGE: #E1712F */
+
+* {
+    font-family: franklin-gothic-urw, sans-serif;
+    font-size: 24px;
+}
+
+/**************************************************************
+ *  REACH
+ *************************************************************/
+
+.reach {
+    background-color: #F5F5F5;
+    padding: 25px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.reach--header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.reach--line {
+    display: flex;
+    font-size: 24px;
+    border-bottom: 2px solid #E1712F;
+    width: 40%;
+}
+
+.reach--title {
+    display: flex;
+    font-size: 48px;
+    width: 20%;
+    justify-content: center;
+}
+
+.reach--row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    width: 100%;
+    padding: 15px;
+}
+
+.reach--icon {
+    margin-bottom: 20px;
+}
+
+.reach--icon img {
+    width: 150px;
+}
+
+.reach--col {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+}
+
+.reach--stat {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+.reach--stat--emph {
+    font-size: 48px;
+    color: #E1712F;
+}
