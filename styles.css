@@ -5,6 +5,99 @@
 * {
     font-family: franklin-gothic-urw, sans-serif;
     font-size: 24px;
+    color: rgb(31, 31, 31);
+    padding: 0;
+    margin: 0;
+}
+
+
+/**************************************************************
+ *  ADVERTISING
+ *************************************************************/
+
+.advertising {
+    background: linear-gradient(rgba(31, 31, 31, 0.95), rgba(31, 31, 31, 0.95)), url(newspaper.jpg);
+    background-color: #1F1F1F;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.advertising--banner {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.advertising--icon {
+    display: flex;
+    margin-right: 20px;
+}
+
+.advertising--icon img {
+    width: auto;
+    height: 100px;
+}
+
+.advertising--right {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.advertising--title {
+    display: flex;
+    color: #FFF;
+    border-bottom: 1px solid #FFF;
+    font-size: 86px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.advertising--slogan {
+    display: flex;
+    color: #FFF;
+    font-weight: 100;
+    font-size: 36px;
+    line-height: 1.5;
+}
+
+
+/**************************************************************
+ *  PRINCE
+ *************************************************************/
+
+.prince {
+    background-color: #1F1F1F;
+    padding: 100px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.prince--header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.prince--title {
+    color: #FFF;
+    font-size: 96px;
+    font-weight: 100;
+    margin-right: auto;
+}
+
+.prince--icon img {
+    width: 400px;
+}
+
+.prince--text {
+    color: #FFF;
+    font-size: 28px;
 }
 
 /**************************************************************
@@ -20,9 +113,10 @@
 
 .reach--header {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     align-items: flex-start;
     justify-content: center;
+    width: 100%;
     margin-bottom: 25px;
 }
 
@@ -30,13 +124,13 @@
     display: flex;
     font-size: 24px;
     border-bottom: 2px solid #E1712F;
-    width: 40%;
+    width: 33%;
 }
 
 .reach--title {
     display: flex;
     font-size: 48px;
-    width: 20%;
+    width: 34%;
     justify-content: center;
 }
 
@@ -72,4 +166,38 @@
 .reach--stat--emph {
     font-size: 48px;
     color: #E1712F;
+}
+
+/**************************************************************
+ *  MEET PRINCETON
+ *************************************************************/
+
+.meet {
+    background-color: #FFF;
+    padding: 25px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.meet--header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.meet--line {
+    display: flex;
+    font-size: 24px;
+    border-bottom: 2px solid #E1712F;
+    width: 33%;
+}
+
+.meet--title {
+    display: flex;
+    font-size: 48px;
+    width: 34%;
+    justify-content: center;
 }
