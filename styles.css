@@ -1,12 +1,11 @@
 /* COLORS */
-/* LIGHT GRAY: #F5F5F5 */
+/* LIGHT GRAY: #F7F8FA */
 /* ORANGE: #E1712F */
 
 * {
     font-family: franklin-gothic-urw, sans-serif;
     font-size: 24px;
     font-weight: 300;
-    color: rgb(31, 31, 31);
     padding: 0;
     margin: 0;
 }
@@ -54,7 +53,7 @@ a {
  *************************************************************/
 
 .advertising {
-    background: linear-gradient(rgba(31, 31, 31, 0.9), rgba(31, 31, 31, 1)), url(newspaper.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1)), url(newspaper.jpg);
     height: 100vh;
     display: flex;
     flex-flow: column nowrap;
@@ -117,7 +116,7 @@ a {
  *************************************************************/
 
 .prince {
-    background-color: #1F1F1F;
+    background-color: #000;
     display: flex;
     flex-flow: column nowrap;
 }
@@ -151,7 +150,7 @@ a {
  *************************************************************/
 
 .reach {
-    background-color: #F5F5F5;
+    background-color: #F7F8FA;
     display: flex;
     flex-flow: column nowrap;
 }
@@ -201,30 +200,44 @@ a {
     align-items: center;
 }
 
-.meet--intro {
-    width: 70%;
+.meet--card--innershell--intro {
+    background-color: #FFF;
     border-radius: 20px;
-    border: 2px solid #E1712F;
-    padding: 30px;
     text-align: center;
+    margin: 15px;
+    padding: 15px;
+}
+
+
+.meet--card--innershell {
+    background-color: #FFF;
+    border-radius: 20px;
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+    height: 125px;
+}
+
+.meet--intro {
+    background-color: #F7F8FA;
+    border-radius: 20px;
+    width: 75%;
 }
 
 .meet--charts {
+    width: 75%;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .meet--chart {
     display: flex;
-    border-radius: 20px;
-    border: 2px solid #E1712F;
     overflow: hidden;
     width: 350px;
     height: 250px;
-    margin: 25px 10px 15px 10px;
-    padding: 20px;
+    margin: 25px 0 25px 0;
 }
 
 .meet--chart img {
@@ -239,13 +252,10 @@ a {
 }
 
 .meet--card {
+    background-color: #F7F8FA;
     border-radius: 20px;
-    border: 2px solid #E1712F;
-    text-align: center;
     width: 350px;
-    height: 125px;
     margin: 10px;
-    padding: 20px;
 }
 
 .meet--card--stat {
@@ -312,7 +322,7 @@ a {
  *  RATES
  *************************************************************/
  .rates {
-    background-color: #F5F5F5;
+    background-color: #F7F8FA;
     flex-flow: column nowrap;
     display: flex;
     flex-direction: column;
