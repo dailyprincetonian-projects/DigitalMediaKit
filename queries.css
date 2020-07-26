@@ -1,0 +1,112 @@
+/* Extra large devices (large laptops and desktops) */
+@media only screen and (max-width: 1200px) {
+    
+    /* FIXING HEADERS  */
+    .header--line {
+        width: 18%;
+    }
+
+    .header--title {
+        width: 62%;
+    }
+    
+    .why--line {
+        width: 18%;
+    }
+
+    .why--title {
+        width: 62%;
+    }
+    
+    /* FIXING WHAT IS THE PRINCE  */
+    .prince--icon img {
+        width: 150px;
+    }
+    
+    .prince--title {
+        font-size: 76px;
+    }
+
+}
+
+/* Large devices (laptops/desktops) */
+@media only screen and (max-width: 992px) {
+    /* FIXING HEADERS  */
+    .header--line {
+        width: 10%;
+    }
+
+    .header--title {
+        width: 80%;
+    }
+    
+    .why--line {
+        width: 10%;
+    }
+
+    .why--title {
+        width: 80%;
+    }
+    
+    /* FIXING WHAT IS THE PRINCE  */
+    .prince--icon img {
+        width: 100px;
+    }
+    
+    .prince--title {
+        font-size: 66px;
+    }
+}
+
+/* Medium devices (landscape tablets) */
+@media only screen and (max-width: 768px) {
+    /* FIXING HEADERS  */
+    .header--line {
+        width: 0%;
+    }
+
+    .header--title {
+        width: 100%;
+    }
+    
+    .why--line {
+        width: 0%;
+    }
+
+    .why--title {
+        width: 100%;
+    }
+    
+    /* FIXING WHAT IS THE PRINCE  */
+    .prince--icon img {
+        width: 75px;
+    }
+    
+    .prince--title {
+        font-size: 48px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones */
+@media only screen and (max-width: 600px) {
+    /* FIXING ADVERTISING  */
+    .advertising--title {
+        font-size: 66px;
+    }
+    .advertising--optbreak {
+        display: block;
+    }
+    
+    /* FIXING WHAT IS THE PRINCE  */
+    .prince--icon img {
+        margin-top: 25px;
+    }
+
+    .prince--header {
+        margin-bottom: 25px;
+    }
+}
+
+
+
+
