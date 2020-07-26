@@ -97,13 +97,14 @@ navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar--wide li {
     text-transform: uppercase;
     border-radius: 10px;
-    margin-right: 20px;
-    padding: 5px;
     display: inline;
     float: right;
 }
@@ -187,14 +188,14 @@ navbar {
 .advertising--title {
     color: #FFF;
     border-bottom: 1px solid #FFF;
-    font-size: 86px;
+    font-size: 48px;
     font-weight: 100;
     margin-bottom: 20px;
 }
 
 .advertising--slogan {
     color: #FFF;
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 100;
     line-height: 1.4;
 }
@@ -270,6 +271,10 @@ navbar {
     padding-bottom: 50px;
 }
 
+.prince--text a {
+    overflow-wrap: break-word;
+}
+
 /**************************************************************
  *  REACH
  *************************************************************/
@@ -329,38 +334,26 @@ navbar {
     background-color: #F7F8FA;
     border-radius: 20px;
     margin-bottom: 10px;
-    width: 350px;
+    width: 275px;
 }
 
 .meet--card--innershell--intro {
     background-color: #F7F8FA;
     border-radius: 20px;
-    text-align: center;
     margin: 10px;
     padding: 15px;
     font-weight: 400;
-}
-
-@media(min-width: 640px) {
-    .meet--intro {
-        width: 75%;
-    }
-
-    .meet--card--innershell--intro {
-        margin: 25px;
-        padding: 15px;
-    }
 }
 
 
 .meet--card--innershell {
     background-color: #F7F8FA;
     border-radius: 20px;
-    text-align: center;
     margin: 25px;
     padding: 15px;
     height: 125px;
     font-weight: 400;
+    text-align: center;
 }
 
 .meet--charts {
@@ -393,7 +386,7 @@ navbar {
 .meet--card {
     background-color: #F7F8FA;
     border-radius: 20px;
-    width: 350px;
+    width: 275px;
     margin: 10px;
 }
 
@@ -413,6 +406,25 @@ navbar {
     height: 30px;
     width: auto;
     margin-right: 5px;
+}
+
+@media(min-width: 640px) {
+    .meet--intro {
+        width: 75%;
+    }
+
+    .meet--card--innershell--intro {
+        margin: 25px;
+        padding: 15px;
+    }
+
+    .meet--card--innershell--intro {
+        text-align: center;
+    }
+
+    .meet--card {
+        width: 350px;
+    }
 }
 
 
