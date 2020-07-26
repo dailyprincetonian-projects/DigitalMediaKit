@@ -201,21 +201,23 @@ a {
 }
 
 .meet--card--innershell--intro {
-    background-color: #FFF;
+    background-color: #F7F8FA;
     border-radius: 20px;
     text-align: center;
-    margin: 15px;
+    margin: 25px;
     padding: 15px;
+    font-weight: 400;
 }
 
 
 .meet--card--innershell {
-    background-color: #FFF;
+    background-color: #F7F8FA;
     border-radius: 20px;
     text-align: center;
-    margin: 15px;
+    margin: 25px;
     padding: 15px;
     height: 125px;
+    font-weight: 400;
 }
 
 .meet--intro {
@@ -261,11 +263,13 @@ a {
 .meet--card--stat {
     color: #E1712F;
     font-size: 48px;
+    font-weight: 600;
 }
 
 .meet--card--stat--sm {
     color: #E1712F;
     font-size: 24px;
+    font-weight: 600;
 }
 
 .meet--card--img {
