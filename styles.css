@@ -10,6 +10,15 @@
     margin: 0;
 }
 
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 a {
     color: #E1712F;
     text-decoration: none;
@@ -57,7 +66,7 @@ navbar {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     background-color: #FFF;
     box-shadow: 0 2px 2px #EFF0F2;
     z-index: 9999;
@@ -78,8 +87,9 @@ navbar {
     margin-right: auto;
 }
 
-.navbar--tag a {
+.navbar--top a {
     color: #000;
+    margin-right: 20px;
 }
 
 
@@ -112,7 +122,6 @@ navbar {
 .hamburger {
     display: none;
     height: 30px;
-    margin-right: 20px;
 }
 
 #navbar--narrow {
