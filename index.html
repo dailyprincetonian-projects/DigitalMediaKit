@@ -49,7 +49,12 @@
                 </div>
             </div>
             <div class="advertising--breaking">
-                <i>BREAKING NEWS&nbsp;&nbsp;&nbsp;</i><span class="advertising--optbreak"><br></span><span class="advertising--headline">U. makes Juneteenth a paid day off</span>
+                <i>BREAKING NEWS&nbsp;&nbsp;&nbsp;</i>
+                <span class="advertising--optbreak"><br></span>
+                <div>
+                    <span class="advertising--headline advertising--headline--invis">Supreme Court rules in favor of U., temporarily protects status of DACA recipients</span>
+                    <span class="advertising--headline" id="advertising-displayed-headline">U. makes Juneteenth a paid day off</span>
+                </div>
             </div>
         </div>
         
@@ -764,8 +769,8 @@
 
             setInterval(function() {
                 i = (i + 1) % 4;
-                $('.advertising--headline').fadeOut(function() {
-                    $('.advertising--headline').text(headline_arr[i]).fadeIn();
+                $('#advertising-displayed-headline').fadeOut(function() {
+                    $('#advertising-displayed-headline').text(headline_arr[i]).fadeIn();
                 });
             }, 4000);
           

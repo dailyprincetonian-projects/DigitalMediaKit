@@ -147,11 +147,11 @@ navbar {
 
 .advertising {
     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1)), url(newspaper.jpg);
-    height: 100vh;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-content: flex-start;
+    min-height: 100vh;
 }
 
 .advertising--banner {
@@ -194,14 +194,37 @@ navbar {
     color: #FFF;
     font-size: 36px;
 }
+
+.advertising--breaking div {
+    position: relative;
+}
+
 .advertising--headline {
     color: #FFF;
     font-size: 36px;
     font-weight: 600;
 }
 
+#advertising-displayed-headline {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+/* used for maintaining consistent height */
+.advertising--headline--invis {
+    visibility: hidden;
+    margin-bottom: 5px;
+}
+
 .advertising--optbreak {
     display: none;
+}
+
+@media(min-width: 640px) {
+    .advertising--headline {
+        
+    }
 }
 
 /**************************************************************
@@ -422,9 +445,14 @@ navbar {
 
 .why--text {
     display: flex;
-    width: 80%;
-    text-align: center;
     color: #FFF;
+}
+
+@media(min-width: 640px) {
+    .why--text {
+        width: 80%;
+        text-align: center;
+    }
 }
 
 /**************************************************************
