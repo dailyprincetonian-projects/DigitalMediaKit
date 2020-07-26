@@ -11,12 +11,29 @@
     </head>
 
     <body>
-        <header>
-            
-        </header>
+        <navbar>
+            <div class="navbar--top">
+                <div class="navbar--tag"><a href="#top">The Daily Princetonian Digital Media Kit</a></div>
+                <ul class="navbar--wide">
+                    <li><a href="#rates">Rates</a></li>
+                    <li><a href="#why">Why?</a></li>
+                    <li><a href="#meet">Meet Princeton</a></li>
+                    <li><a href="#reach">Reach</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+                <a href="javascript:void(0);" onclick="toggleNavbar()"><img src="hamburger.png" class="hamburger"></a>
+            </div>
+            <ul id="navbar--narrow">
+                <li><a href="#about">About</a></li>
+                <li><a href="#reach">Reach</a></li>
+                <li><a href="#meet">Meet Princeton</a></li>
+                <li><a href="#why">Why?</a></li>
+                <li><a href="#rates">Rates</a></li>
+            </ul>
+        </navbar>
         
         <!-- ADVERTISING    -->
-        <div class="advertising section">
+        <div class="advertising section" id="top">
             <div class="advertising--banner">
                 <div class="advertising--icon">
                     <img src="tiger.png" alt="Prince Logo">
@@ -32,12 +49,12 @@
                 </div>
             </div>
             <div class="advertising--breaking">
-                <i>BREAKING NEWS&nbsp;&nbsp;&nbsp;</i><span class="advertising--optbreak"><br></span><b>U. makes Juneteenth a paid day off.</b>
+                <i>BREAKING NEWS&nbsp;&nbsp;&nbsp;</i><span class="advertising--optbreak"><br></span><span class="advertising--headline">U. makes Juneteenth a paid day off</span>
             </div>
         </div>
         
         <!-- WHAT IS THE PRINCE?    -->
-        <div class="prince section">
+        <div class="prince section" id="about">
             <div class="prince--header">
                 <div class="prince--title">
                     What is the Prince?
@@ -54,7 +71,7 @@
         </div>
 
         <!-- OUR REACH    -->
-        <div class="reach section">
+        <div class="reach section" id="reach">
             <div class="header">
                 <div class="header--line">
                     &nbsp;
@@ -123,7 +140,7 @@
         </div>
         
         <!-- MEET PRINCETON    -->
-        <div class="meet section">
+        <div class="meet section" id="meet">
             <div class="header">
                 <div class="header--line">
                     &nbsp;
@@ -218,7 +235,7 @@
         </div>
         
         <!-- WHY?    -->
-        <div class="why section">
+        <div class="why section" id="why">
             <div class="header">
                 <div class="why--line">
                     &nbsp;
@@ -236,7 +253,7 @@
         </div>
 
         <!-- RATES -->
-        <div class="rates section">
+        <div class="rates section" id="rates">
             <div class="header">
                 <div class="header--line">
                     &nbsp;
@@ -256,7 +273,7 @@
                     <option class="rates--select--option">National Advertiser</option>
                 </select>
             </div>
-            <div class="rates--container">
+            <div class="rates--container" id="rates--container--student">
                 <div class="rates--card--container">
                     <img src="iphonex-portrait.png" alt="email headline preview" />
                     <div class="rates--card">
@@ -402,11 +419,384 @@
                     </div>
                 </div>
             </div>
+            
+            <div class="rates--container" id="rates--container--local">
+                <div class="rates--card--container">
+                    <img src="iphonex-portrait.png" alt="email headline preview" />
+                    <div class="rates--card">
+                        <div class="rates--type">Email headline</div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Day...</div>
+                            <div class="rates--cost">$555</div>
+                        </div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Week...</div>
+                            <div class="rates--cost">$555</div>
+                        </div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Month...</div>
+                            <div class="rates--cost">$555</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rates--card--container">
+                    <img src="iphonex-portrait.png" alt="email headline preview" />
+                    <div class="rates--card">
+                        <div class="rates--type">Email In-Article</div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Day...</div>
+                            <div class="rates--cost">$35</div>
+                        </div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Week...</div>
+                            <div class="rates--cost">$155</div>
+                        </div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Month...</div>
+                            <div class="rates--cost">$555</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rates--card--container">
+                    <img src="iphonex-portrait.png" alt="email headline preview" />
+                    <div class="rates--card">
+                        <div class="rates--type">Email Bottom</div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Day...</div>
+                            <div class="rates--cost">$30</div>
+                        </div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Week...</div>
+                            <div class="rates--cost">$135</div>
+                        </div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Month...</div>
+                            <div class="rates--cost">$475</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rates--card--container">
+                    <img src="iphonex-portrait.png" alt="email headline preview" />
+                    <div class="rates--card">
+                        <div class="rates--type">Breaking News Reservation</div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Day...</div>
+                            <div class="rates--cost">$35</div>
+                        </div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Week...</div>
+                            <div class="rates--cost">$155</div>
+                        </div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Month...</div>
+                            <div class="rates--cost">$555</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rates--card--container">
+                    <img src="iphonex-portrait.png" alt="email headline preview" />
+                    <div class="rates--card">
+                        <div class="rates--type">Website Leaderboard</div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Day...</div>
+                            <div class="rates--cost">$75</div>
+                        </div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Week...</div>
+                            <div class="rates--cost">$465</div>
+                        </div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Month...</div>
+                            <div class="rates--cost">$1855</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rates--card--container">
+                    <img src="iphonex-portrait.png" alt="email headline preview" />
+                    <div class="rates--card">
+                        <div class="rates--type">Website Skyscraper</div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Day...</div>
+                            <div class="rates--cost">$60</div>
+                        </div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Week...</div>
+                            <div class="rates--cost">$375</div>
+                        </div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Month...</div>
+                            <div class="rates--cost">$1475</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rates--card--container">
+                    <img src="iphonex-portrait.png" alt="email headline preview" />
+                    <div class="rates--card">
+                        <div class="rates--type">Website Bottom Leaderboard</div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Day...</div>
+                            <div class="rates--cost">$40</div>
+                        </div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Week...</div>
+                            <div class="rates--cost">$245</div>
+                        </div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Month...</div>
+                            <div class="rates--cost">$985</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rates--card--container">
+                    <img src="iphonex-portrait.png" alt="email headline preview" />
+                    <div class="rates--card">
+                        <div class="rates--type">Website Box</div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Day...</div>
+                            <div class="rates--cost">$40</div>
+                        </div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Week...</div>
+                            <div class="rates--cost">$245</div>
+                        </div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Month...</div>
+                            <div class="rates--cost">$985</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="rates--container" id="rates--container--national">
+                <div class="rates--card--container">
+                    <img src="iphonex-portrait.png" alt="email headline preview" />
+                    <div class="rates--card">
+                        <div class="rates--type">Email headline</div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Day...</div>
+                            <div class="rates--cost">$444</div>
+                        </div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Week...</div>
+                            <div class="rates--cost">$444</div>
+                        </div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Month...</div>
+                            <div class="rates--cost">$444</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rates--card--container">
+                    <img src="iphonex-portrait.png" alt="email headline preview" />
+                    <div class="rates--card">
+                        <div class="rates--type">Email In-Article</div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Day...</div>
+                            <div class="rates--cost">$35</div>
+                        </div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Week...</div>
+                            <div class="rates--cost">$155</div>
+                        </div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Month...</div>
+                            <div class="rates--cost">$555</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rates--card--container">
+                    <img src="iphonex-portrait.png" alt="email headline preview" />
+                    <div class="rates--card">
+                        <div class="rates--type">Email Bottom</div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Day...</div>
+                            <div class="rates--cost">$30</div>
+                        </div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Week...</div>
+                            <div class="rates--cost">$135</div>
+                        </div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Month...</div>
+                            <div class="rates--cost">$475</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rates--card--container">
+                    <img src="iphonex-portrait.png" alt="email headline preview" />
+                    <div class="rates--card">
+                        <div class="rates--type">Breaking News Reservation</div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Day...</div>
+                            <div class="rates--cost">$35</div>
+                        </div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Week...</div>
+                            <div class="rates--cost">$155</div>
+                        </div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Month...</div>
+                            <div class="rates--cost">$555</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rates--card--container">
+                    <img src="iphonex-portrait.png" alt="email headline preview" />
+                    <div class="rates--card">
+                        <div class="rates--type">Website Leaderboard</div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Day...</div>
+                            <div class="rates--cost">$75</div>
+                        </div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Week...</div>
+                            <div class="rates--cost">$465</div>
+                        </div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Month...</div>
+                            <div class="rates--cost">$1855</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rates--card--container">
+                    <img src="iphonex-portrait.png" alt="email headline preview" />
+                    <div class="rates--card">
+                        <div class="rates--type">Website Skyscraper</div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Day...</div>
+                            <div class="rates--cost">$60</div>
+                        </div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Week...</div>
+                            <div class="rates--cost">$375</div>
+                        </div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Month...</div>
+                            <div class="rates--cost">$1475</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rates--card--container">
+                    <img src="iphonex-portrait.png" alt="email headline preview" />
+                    <div class="rates--card">
+                        <div class="rates--type">Website Bottom Leaderboard</div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Day...</div>
+                            <div class="rates--cost">$40</div>
+                        </div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Week...</div>
+                            <div class="rates--cost">$245</div>
+                        </div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Month...</div>
+                            <div class="rates--cost">$985</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rates--card--container">
+                    <img src="iphonex-portrait.png" alt="email headline preview" />
+                    <div class="rates--card">
+                        <div class="rates--type">Website Box</div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Day...</div>
+                            <div class="rates--cost">$40</div>
+                        </div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Week...</div>
+                            <div class="rates--cost">$245</div>
+                        </div>
+                        <div class="rates--subtype--container" horizontal>
+                            <div class="rates--subtype">Month...</div>
+                            <div class="rates--cost">$985</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         
-        <footer>
+        <!-- WHY?    -->
+        <footer class="section">
             
         </footer>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        <script>
+        // NAVBAR
+        function toggleNavbar() {
+            var x = document.getElementById("navbar--narrow");
+            $('#navbar--narrow').toggle();
+        }
+            
+        $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top -60
+                    }, 800);
+                } // End if
+            });
+            
+        });
+        </script>
+        
+        <script>
+        // HEADLINES
+        $(document).ready(function(){
+            // Change the headlines every 3 seconds.
+            var headline_arr = ['U. makes Juneteenth a paid day off',
+                                'Supreme Court rules in favor of U., temporarily protects status of DACA recipients', 
+                                'Gen. Mark Milley ’80 apologizes for his role in Trump photo-op',
+                                '2020 Baccalaureate speaker Ressa ’86 found guilty of cyber libel in Philippines'];
+            var i = 0;
+
+            setInterval(function() {
+                i = (i + 1) % 4;
+                $('.advertising--headline').fadeOut(function() {
+                    $('.advertising--headline').text(headline_arr[i]).fadeIn();
+                });
+            }, 4000);
+          
+        });
+        </script>
+        
+        <script>
+        // RATES
+        $(document).ready(function(){
+            document.getElementById("rates--container--local").style.display = "none";
+            document.getElementById("rates--container--national").style.display = "none";
+            $(".rates--select").change(function (){
+                var x = $('.rates--select option:selected').text();
+                if (x == 'Local Advertiser') {
+                    document.getElementById("rates--container--student").style.display = "none";
+                    document.getElementById("rates--container--local").style.display = "";
+                    document.getElementById("rates--container--national").style.display = "none";
+                } else if (x == 'National Advertiser') {
+                    document.getElementById("rates--container--student").style.display = "none";
+                    document.getElementById("rates--container--local").style.display = "none";
+                    document.getElementById("rates--container--national").style.display = "";
+                } else {
+                    document.getElementById("rates--container--student").style.display = "";
+                    document.getElementById("rates--container--local").style.display = "none";
+                    document.getElementById("rates--container--national").style.display = "none";
+                }
+            });
+          
+        });   
+        </script>
+        
     </body>
     
 </html>

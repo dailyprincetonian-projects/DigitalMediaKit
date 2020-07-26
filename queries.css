@@ -26,6 +26,15 @@
     .prince--title {
         font-size: 76px;
     }
+    
+        
+    .hamburger {
+        display: block;
+    }
+    
+    .navbar--wide {
+        display: none;
+    }
 
 }
 

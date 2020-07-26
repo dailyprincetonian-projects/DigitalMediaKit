@@ -15,6 +15,7 @@ a {
     text-decoration: none;
 }
 
+
 .section {
     padding: 50px;
 }
@@ -49,8 +50,100 @@ a {
 }
 
 /**************************************************************
+ *  NAVBAR
+ *************************************************************/
+
+navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFF;
+    box-shadow: 0 2px 2px #EFF0F2;
+    z-index: 9999;
+    font-size: 22px; 
+}
+
+.navbar--top {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;   
+    height: 60px;
+    box-shadow: 0 2px 2px #EFF0F2;
+}
+
+.navbar--tag {
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+.navbar--tag a {
+    color: #000;
+}
+
+
+.navbar--wide {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar--wide li {
+    text-transform: uppercase;
+    border-radius: 10px;
+    margin-right: 20px;
+    padding: 5px;
+    display: inline;
+    float: right;
+}
+
+.navbar--wide li a {
+    color: #000;
+    border-bottom: 0px solid #E1712F;
+    transition: border-bottom 0.2s;
+}
+
+.navbar--wide li a:hover {
+    border-bottom: 2px solid #E1712F;
+    transition: border-bottom 0.4s;
+}
+
+.hamburger {
+    display: none;
+    height: 30px;
+    margin-right: 20px;
+}
+
+#navbar--narrow {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+#navbar--narrow li {
+    text-transform: uppercase;
+    border-radius: 10px;
+    margin: 10px 0px 10px 20px;
+    padding: 5px;
+}
+
+#navbar--narrow li a {
+    color: #000;
+    border-bottom: 0px solid #E1712F;
+    transition: border-bottom 0.2s;
+}
+
+#navbar--narrow li a:hover {
+    border-bottom: 2px solid #E1712F;
+    transition: border-bottom 0.4s;
+}
+
+/**************************************************************
  *  ADVERTISING
  *************************************************************/
+
 
 .advertising {
     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1)), url(newspaper.jpg);
@@ -101,10 +194,10 @@ a {
     color: #FFF;
     font-size: 36px;
 }
-
-.advertising--breaking b {
+.advertising--headline {
     color: #FFF;
     font-size: 36px;
+    font-weight: 600;
 }
 
 .advertising--optbreak {
