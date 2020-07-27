@@ -657,8 +657,6 @@ navbar {
     font-weight: 400;
 }
 
-
-
 .footer ul {
     list-style-type: none;
     line-height: 1.5;
@@ -668,7 +666,8 @@ navbar {
 .footer ul img {
     height: 15px;
     filter: invert(100%);
-    margin-right: 0px;
+    margin: 0;
+    padding: 10px;
 }
 
 .footer ul img:hover {
@@ -692,4 +691,8 @@ navbar {
 
 .footer li b a:hover {
     color: #E0E0E0;
+}
+
+.footer--break {
+    display: none;
 }
