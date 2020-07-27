@@ -610,3 +610,86 @@ navbar {
     color: #E1712F;
     margin-left: auto;
 }
+
+/**************************************************************
+ *  FOOTER
+ *************************************************************/
+
+.footer {
+    background-color: #000;
+    color: #FFF;
+}
+
+.footer--row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer--logo {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer--row img {
+    height: 200px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-right: 1px solid #FFF;
+    margin-right: 50px;
+}
+
+.footer--button {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #E1712F;
+    padding: 10px;
+    margin-right: 50px;
+}
+
+.footer--button a {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+
+.footer ul {
+    list-style-type: none;
+    line-height: 1.5;
+    margin-right: 50px;
+}
+
+.footer ul img {
+    height: 15px;
+    filter: invert(100%);
+    margin-right: 0px;
+}
+
+.footer ul img:hover {
+    filter: invert(75%);
+}
+
+.footer li a {
+    font-size: 15px;
+    color: #FFF;
+}
+
+.footer li b a {
+    font-weight: 700;
+    font-size: 15px;
+    color: #FFF;
+}
+
+.footer li a:hover {
+    color: #E0E0E0;
+}
+
+.footer li b a:hover {
+    color: #E0E0E0;
+}
