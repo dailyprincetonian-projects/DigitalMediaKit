@@ -17,6 +17,7 @@ html,body
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
+    scroll-behavior: smooth;
 }
 
 a {
@@ -26,7 +27,7 @@ a {
 
 
 .section {
-    padding: 50px;
+    padding: 100px 50px 100px 50px;
 }
 
 .header {
@@ -93,7 +94,7 @@ navbar {
 }
 
 .navbar--tag {
-    margin-left: 20px;
+    margin-left: 40px;
     margin-right: auto;
 }
 
@@ -166,7 +167,7 @@ navbar {
 
 
 .advertising {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1)), url(newspaper.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1)), url(newspaper.png);
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -495,8 +496,6 @@ navbar {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
 }
 
 .rates--select--container {
