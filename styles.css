@@ -557,7 +557,9 @@ navbar {
     justify-content: center;
     align-items: baseline;
     max-width: 550px;
+    margin-top: 0rem;
     margin-bottom: 2rem;
+    transition: margin-top 0.25s ease-in, margin-bottom 0.25s ease-in;
 }
 
 .rates--select--container.none--selected {
@@ -621,7 +623,15 @@ navbar {
     align-items: center;
     width: 75vw;
     margin: 17.5px;
+    opacity: 0;
+    transition: opacity 1s;
+    transition-delay: 0.25s;
 }
+
+.animations--visible.rates--card--container {
+    opacity: 1;
+}
+
 
 .rates--card--container img {
     width: inherit;
