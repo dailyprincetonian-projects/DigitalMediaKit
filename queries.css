@@ -2,7 +2,7 @@
 @media only screen and (max-width: 1200px) {
     
     /* FIXING HEADERS  */
-    .animations--visible.header--line {
+    .header--line.animations--visible {
         width: 18%;
     }
 
@@ -10,11 +10,11 @@
         width: 62%;
     }
     
-    .why--line {
+    .why--line.animations--visible {
         width: 18%;
     }
 
-    .why--title {
+    .why--title.animations--visible {
         width: 62%;
     }
     
@@ -50,7 +50,7 @@
 /* Large devices (laptops/desktops) */
 @media only screen and (max-width: 992px) {
     /* FIXING HEADERS  */
-    .animations--visible.header--line {
+    .header--line.animations--visible {
         width: 10%;
     }
 
@@ -58,11 +58,11 @@
         width: 80%;
     }
     
-    .why--line {
+    .why--line.animations--visible {
         width: 10%;
     }
 
-    .why--title {
+    .why--title.animations--visible {
         width: 80%;
     }
     
@@ -84,7 +84,7 @@
 /* Medium devices (landscape tablets) */
 @media only screen and (max-width: 768px) {
     /* FIXING HEADERS  */
-    .header--line {
+    .header--line.animations--visible {
         width: 0%;
     }
 
@@ -92,11 +92,11 @@
         width: 100%;
     }
     
-    .why--line {
+    .why--line.animations--visible {
         width: 0%;
     }
 
-    .why--title {
+    .why--title.animations--visible {
         width: 100%;
     }
     

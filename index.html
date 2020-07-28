@@ -81,13 +81,13 @@
         <!-- OUR REACH    -->
         <div class="reach section" id="reach">
             <div class="header">
-                <div class="header--line animated--visibility">
+                <div class="header--line">
                     &nbsp;
                 </div>
-                <div class="header--title animated--visibility">
+                <div class="header--title">
                     OUR REACH
                 </div>
-                <div class="header--line animated--visibility">
+                <div class="header--line">
                     &nbsp;
                 </div>
             </div>
@@ -881,9 +881,11 @@
             };
 
             let observer = new IntersectionObserver(callbackFn, options);
-            document.querySelectorAll(".animated--visibility").forEach(elem => {
-                observer.observe(elem);
-            })
+            for (const query of ['.header--line', '.header--title', '.why--line', '.why--title']) {
+                document.querySelectorAll(query).forEach(elem => {
+                    observer.observe(elem);
+                })
+            }
         </script>
         
     </body>
