@@ -276,6 +276,7 @@
             <div class="rates--select--container">
                 <div>I am a</div>
                 <select class="rates--select">
+                    <option hidden selected disabled value class="rates--select--option">-- select an option --</option>
                     <option class="rates--select--option">Princeton Student or Organization</option>
                     <option class="rates--select--option">Local Advertiser</option>
                     <option class="rates--select--option">National Advertiser</option>
@@ -877,11 +878,12 @@
             let options = {
                 root: null,
                 rootMargin: '0px',
-                threshold: 0.75
+                threshold: 0.3
             };
 
             let observer = new IntersectionObserver(callbackFn, options);
-            for (const query of ['.header--line', '.header--title', '.why--line', '.why--title']) {
+            for (const query of ['.header--line', '.header--title', '.why--line', '.why--title',
+             '.reach--col', '.meet--intro', '.meet--card', '.meet--chart']) {
                 document.querySelectorAll(query).forEach(elem => {
                     observer.observe(elem);
                 })

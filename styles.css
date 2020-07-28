@@ -319,6 +319,13 @@ navbar {
     align-items: flex-start;
     width: 350px;
     margin-bottom: 25px;
+    opacity: 0;
+    transition: opacity 1.5s;
+    transition-delay: 0.25s;
+}
+
+.reach--col.animations--visible {
+    opacity: 1;
 }
 
 .reach--stat {
@@ -348,6 +355,13 @@ navbar {
     border-radius: 20px;
     margin-bottom: 10px;
     width: 80vw;
+    opacity: 0;
+    transition: opacity 1.5s;
+    transition-delay: 0.25s;
+}
+
+.meet--intro.animations--visible {
+    opacity: 1;
 }
 
 .meet--card--innershell--intro {
@@ -382,7 +396,15 @@ navbar {
     width: 350px;
     height: 250px;
     margin: 25px 0 25px 0;
+    opacity: 0;
+    transition: opacity 1s;
+    transition-delay: 0.25s;
 }
+
+.meet--chart.animations--visible {
+    opacity: 1;
+}
+
 
 .meet--chart img {
     width: 350px;
@@ -400,7 +422,15 @@ navbar {
     border-radius: 20px;
     width: 80vw;
     margin: 10px;
+    opacity: 0;
+    transition: opacity 1.1s;
+    transition-delay: 0.5s;
 }
+
+.meet--card.animations--visible {
+    opacity: 1;
+}
+
 
 .meet--card--stat {
     color: #E1712F;
