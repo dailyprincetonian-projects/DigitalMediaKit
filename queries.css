@@ -2,7 +2,7 @@
 @media only screen and (max-width: 1200px) {
     
     /* FIXING HEADERS  */
-    .header--line {
+    .animations--visible.header--line {
         width: 18%;
     }
 
@@ -50,7 +50,7 @@
 /* Large devices (laptops/desktops) */
 @media only screen and (max-width: 992px) {
     /* FIXING HEADERS  */
-    .header--line {
+    .animations--visible.header--line {
         width: 10%;
     }
 

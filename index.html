@@ -81,13 +81,13 @@
         <!-- OUR REACH    -->
         <div class="reach section" id="reach">
             <div class="header">
-                <div class="header--line">
+                <div class="header--line animated--visibility">
                     &nbsp;
                 </div>
-                <div class="header--title">
+                <div class="header--title animated--visibility">
                     OUR REACH
                 </div>
-                <div class="header--line">
+                <div class="header--line animated--visibility">
                     &nbsp;
                 </div>
             </div>
@@ -817,6 +817,7 @@
             });
             
         });
+
         </script>
         
         <script>
@@ -862,6 +863,27 @@
             });
           
         });   
+        </script>
+
+        <script>
+            function callbackFn(entries, _observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("animations--visible");
+                    }
+                })
+            };
+
+            let options = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.75
+            };
+
+            let observer = new IntersectionObserver(callbackFn, options);
+            document.querySelectorAll(".animated--visibility").forEach(elem => {
+                observer.observe(elem);
+            })
         </script>
         
     </body>

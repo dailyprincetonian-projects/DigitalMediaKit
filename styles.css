@@ -43,8 +43,12 @@ a {
     display: flex;
     border-bottom: 2px solid #E1712F;
     font-size: 24px;
-    width: 25%;
+    width: 0%;
+    transition: width 2s;
+    transition-delay: 1s;
 }
+
+/* note: width for header line after animation is specified in queries  */
 
 .header--title {
     display: flex;
@@ -52,6 +56,12 @@ a {
     text-transform: uppercase;
     font-size: 48px;
     width: 50%;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.animations--visible.header--title {
+    opacity: 1;
 }
 
 .asterisk {
@@ -156,7 +166,7 @@ navbar {
 
 
 .advertising {
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1)), url(newspaper.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1)), url(newspaper.jpg);
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
