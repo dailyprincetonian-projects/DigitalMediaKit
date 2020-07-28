@@ -393,8 +393,6 @@ navbar {
 .meet--chart {
     display: flex;
     overflow: hidden;
-    width: 350px;
-    height: 250px;
     margin: 25px 0 25px 0;
     opacity: 0;
     transition: opacity 1s ease-out;
@@ -415,7 +413,7 @@ navbar {
 
 
 .meet--chart img {
-    width: 350px;
+    height: 350px;
 }
 
 .meet--cards {
@@ -743,7 +741,8 @@ navbar {
     height: 15px;
     filter: invert(100%);
     margin: 0;
-    padding: 10px;
+    padding-left: 0px;
+    padding-right: 10px;
 }
 
 .footer ul img:hover {
