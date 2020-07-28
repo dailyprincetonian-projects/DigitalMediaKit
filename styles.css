@@ -395,7 +395,7 @@ navbar {
     overflow: hidden;
     margin: 25px 0 25px 0;
     opacity: 0;
-    transition: opacity 1s ease-out;
+    transition: opacity 1s ease-in;
     transition-delay: 0.25s;
 }
 
