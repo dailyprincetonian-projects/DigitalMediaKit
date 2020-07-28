@@ -45,7 +45,7 @@ a {
     border-bottom: 2px solid #E1712F;
     font-size: 24px;
     width: 0%;
-    transition: width 2s;
+    transition: width 0.75s cubic-bezier(0.5, 1, 0.89, 1);
     transition-delay: 0.5s;
 }
 
@@ -397,12 +397,20 @@ navbar {
     height: 250px;
     margin: 25px 0 25px 0;
     opacity: 0;
-    transition: opacity 1s;
+    transition: opacity 1s ease-out;
     transition-delay: 0.25s;
 }
 
 .meet--chart.animations--visible {
     opacity: 1;
+    /* easeOutQuad */
+    animation: chart-spin 1.25s cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+@keyframes chart-spin {
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 
@@ -550,6 +558,11 @@ navbar {
     align-items: baseline;
     max-width: 550px;
     margin-bottom: 2rem;
+}
+
+.rates--select--container.none--selected {
+   margin-top: 100px;
+   margin-bottom: 150px;
 }
 
 .rates--select--container div {

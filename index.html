@@ -273,7 +273,7 @@
                     &nbsp;
                 </div>
             </div>
-            <div class="rates--select--container">
+            <div class="rates--select--container none--selected">
                 <div>I am a</div>
                 <select class="rates--select">
                     <option hidden selected disabled value class="rates--select--option">-- select an option --</option>
@@ -846,7 +846,9 @@
         $(document).ready(function(){
             document.getElementById("rates--container--local").style.display = "none";
             document.getElementById("rates--container--national").style.display = "none";
+            document.getElementById("rates--container--student").style.display = "none";
             $(".rates--select").change(function (){
+                document.querySelector(".rates--select--container").classList.remove("none--selected")
                 var x = $('.rates--select option:selected').text();
                 if (x == 'Local Advertiser') {
                     document.getElementById("rates--container--student").style.display = "none";
