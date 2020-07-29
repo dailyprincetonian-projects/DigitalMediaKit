@@ -401,14 +401,6 @@ navbar {
 
 .meet--chart.animations--visible {
     opacity: 1;
-    /* easeOutQuad */
-    animation: chart-spin 1.25s cubic-bezier(0.5, 1, 0.89, 1);
-}
-
-@keyframes chart-spin {
-    100% {
-        transform: rotate(360deg);
-    }
 }
 
 
