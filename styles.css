@@ -215,9 +215,10 @@ navbar {
     line-height: 1.4;
 }
 
-.advertising--breaking i {
+.advertising--breaking b {
     color: #FFF;
-    font-size: 36px;
+    font-size: 32px;
+    font-weight: 700;
 }
 
 .advertising--breaking div {
@@ -601,6 +602,16 @@ navbar {
 /* IE compat */
 .rates--select::-ms-expand {
     display: none;
+}
+
+.rates--text {
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.rates--text a {
+    font-size: 20px;
 }
 
 .rates--select--option {
