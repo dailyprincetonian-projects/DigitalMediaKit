@@ -548,7 +548,7 @@ navbar {
     align-items: baseline;
     max-width: 550px;
     margin-top: 0rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
     transition: margin-top 0.25s ease-in, margin-bottom 0.25s ease-in;
 }
 

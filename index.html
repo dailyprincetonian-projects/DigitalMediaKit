@@ -1059,6 +1059,24 @@
         
         <script>
         // RATES
+        //set to 1000 when something selected
+        let timeoutLen = 0;
+
+        function toggleVisibility(offs, on) {
+            for (const off of offs) {
+                for (const elem of document.querySelectorAll(`#${off} .rates--card--container`)) {
+                    elem.classList.remove('animations--visible')
+                };
+            }
+            setTimeout(() => {
+                for (const off of offs) {
+                    document.getElementById(off).style.display = "none";
+                };
+                document.getElementById(on).style.display = "";
+            }, timeoutLen);
+            timeoutLen = 1000;
+        };
+        
         $(document).ready(function(){
             document.getElementById("rates--container--local").style.display = "none";
             document.getElementById("rates--container--national").style.display = "none";
@@ -1067,17 +1085,11 @@
                 document.querySelector(".rates--select--container").classList.remove("none--selected")
                 var x = $('.rates--select option:selected').text();
                 if (x == 'Local Advertiser') {
-                    document.getElementById("rates--container--student").style.display = "none";
-                    document.getElementById("rates--container--local").style.display = "";
-                    document.getElementById("rates--container--national").style.display = "none";
+                    toggleVisibility(["rates--container--student", "rates--container--national"], "rates--container--local");
                 } else if (x == 'National Advertiser') {
-                    document.getElementById("rates--container--student").style.display = "none";
-                    document.getElementById("rates--container--local").style.display = "none";
-                    document.getElementById("rates--container--national").style.display = "";
+                    toggleVisibility(["rates--container--student", "rates--container--local"], "rates--container--national");
                 } else {
-                    document.getElementById("rates--container--student").style.display = "";
-                    document.getElementById("rates--container--local").style.display = "none";
-                    document.getElementById("rates--container--national").style.display = "none";
+                    toggleVisibility(["rates--container--national", "rates--container--local"], "rates--container--student");
                 }
             });
           
